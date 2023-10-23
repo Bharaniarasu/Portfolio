@@ -31,21 +31,27 @@
   gap: 1.5rem;
 }
 .about__card {
-  background: var(--color-bg-variant);
-  border: 1px solid transparent;
+  background: linear-gradient(160deg,var(--color-primary), transparent);
+  color: var(--bs-light);
+  border: 1px solid black;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
 }
 .about__card:hover {
-  border-color: var(--color-primary-variant);
+  border-color: var(--bs-primary);
   background: transparent;
   cursor: default;
+  color:var(--bs-primary);
+
+  .about__icon{
+    color:var(--bs-primary);
+  }
 }
 
 .about__icon {
-  color: var(--color-primary);
+  color:var(--bs-light);
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }

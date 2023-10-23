@@ -10,12 +10,16 @@
   text-decoration: none;
 }
 :root {
-  --color-bg: #1f1f38;
+  --bs-body-bg:#131316 !important;
+  
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
+  --color-purple:#8F43EE;
+  --color-yellow:#efe96f;
+
   --transition: all 400ms ease;
   --container-width-lg: 75%;
   --container-width-md: 86%;
@@ -29,7 +33,7 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--color-bg);
+  background: var(--color-bg) ;
   color: var(--color-white);
   line-height: 1.7;
   background-image: var(--bg-texture);
