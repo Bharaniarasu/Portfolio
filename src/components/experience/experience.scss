@@ -4,22 +4,21 @@
   gap: 2rem;
 }
 .experience__container > div {
-  background: linear-gradient(160deg,var(--color-primary), transparent);
+  background: linear-gradient(160deg, var(--color-primary), transparent);
   padding: 2.4rem 5rem;
   border-radius: 2rem;
-  border: 1px solid ;
+  border: 2px solid var(--color-border);
   transition: var(--transition);
 }
 .experience__container > div:hover {
   background: transparent;
-  border-color: var(--color-primary-variant);
+  border:2px solid var(--color-primary);
   cursor: default;
-  h3{
-color:var(--color-primary)
+  h3 {
+    color: var(--color-primary);
   }
-  h4{
-    color:var(--color-primary)
-
+  h4 {
+    color: var(--color-primary);
   }
 }
 .experience__container > div h3 {
@@ -35,7 +34,7 @@ color:var(--color-primary)
 .experience__details {
   display: flex;
   gap: 1rem;
-  h4{
+  h4 {
     color: var(--color-dark);
   }
 }

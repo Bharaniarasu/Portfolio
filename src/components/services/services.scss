@@ -16,8 +16,8 @@
   cursor: default;
   .service__list {
     background: transparent;
-  transition: var(--transition);
-
+    transition: var(--transition);
+    border: 2px solid var(--color-primary);
   }
   .service__head {
     background-color: var(--color-primary);
@@ -47,6 +47,8 @@
 .service__list {
   padding: 2rem;
   background: linear-gradient(160deg, var(--color-primary), transparent);
+  border: 2px solid transparent;
+  border-bottom: 2px solid var(--color-border);
   margin-bottom: 0;
   border-radius: 0 0 2rem 2rem;
 }
