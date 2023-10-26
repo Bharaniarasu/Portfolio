@@ -13,20 +13,44 @@
 }
 .portfolio__item:hover {
   background: transparent;
-  border:2px solid var(--color-primary);
+  border: 2px solid var(--color-primary);
+  h4{
+    color: var(--color-primary);
+
+  }
 }
 .portfolio__item-image {
   border-radius: 1.5rem;
   overflow: hidden;
 }
-.portfolio__item h3 {
+.portfolio__item h4 {
   margin: 1.2rem 0 2rem;
+  color: var(--color-light);
 }
+
 .portfolio__item-cta {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
 }
+.button_git > a {
+  text-decoration: none;
+}
+.button_git:hover {
+  > a {
+    color: var(--color-white);
+  }
+}
+.button_demo > a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+.button_demo:hover {
+  > a {
+    color: var(--color-white);
+  }
+}
+
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ============= */
 
 @media screen and (max-width: 1024px) {

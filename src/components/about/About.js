@@ -1,5 +1,5 @@
 import { Component } from "react";
-import ME from "../../assets/me-about.jpg";
+import ME from "../../assets/images/me-about.jpg";
 import { BsAwardFill } from "react-icons/bs";
 import { FiUsers } from "react-icons/fi";
 import { FaProjectDiagram } from "react-icons/fa";
@@ -34,11 +34,13 @@ class About extends Component {
                 <small>15+ Personal Projects</small>
               </article>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate voluptatum recusandae sint ipsam est inventore alias
-              dolorem ducimus voluptatem ipsa quidem expedita dolorum porro
-              error ex amet officia, facilis assumenda!
+            <p className="text-justify">
+              Experienced MERN Stack Developer with 2 years of experience in
+              crafting innovative web solutions. Actively pursuing a role to
+              apply my expertise in designing, developing, and maintaining web
+              applications. Dedicated to delivering high-quality code and
+              exceptional user experiences to support the success of
+              forward-thinking enterprises.
             </p>
             <a href="#contact" className="btn btn-outline-primary">
               Let's Talk

@@ -1,89 +1,128 @@
-import { Component, createRef } from "react";
+import { Component, createRef, useState } from "react";
 import "./contact.scss";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
-import { RiWhatsappLine } from "react-icons/ri";
+import { RiWhatsappLine, RiPhoneLine } from "react-icons/ri";
 import emailjs from "@emailjs/browser";
-class Contact extends Component {
-  constructor() {
-    super();
-    this.form = createRef();
-  }
-  sendEmail(e) {
-    e.preventDefault();
+import axios from "axios";
+const Contact = () => {
+  const [fullName, setFullName] = useState("");
+  const [eMail, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [message, setMessage] = useState("");
 
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        this.form.current,
-        "YOUR_USER_ID"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
+  const userDataHandler = async (event) => {
+    event.preventDefault();
+    const data = {
+      Name: fullName,
+      Email: eMail,
+      MobileNumber: mobile,
+      Message: message,
+    };
+    const formData = new FormData();
+    for (const key in data) {
+      formData.append(key, data[key]);
+    }
+    try {
+      await axios.post(
+        "https://script.google.com/macros/s/AKfycbxqYy2V66m4Qmc69b36Zv8-yZiiqp_1tSmU4DlFiQy4gu5OSddamLtw6pVUkh41ragQ/exec",
+        data,
+        {
+          headers: {
+            "Content-Type": "text/plain",
+          },
         }
       );
-    e.target.reset();
-  }
-  render() {
-    return (
-      <section id="contact">
-        <h5>Get In Touch</h5>
-        <h2>Contact Me</h2>
-        <div className="container contact__container">
-          <div className="contact__options">
-            <div className="contact__option">
-              <MdOutlineEmail className="contact__option-icon" />
-              <h4>Email</h4>
-              <h5>inext.dev@proton.me</h5>
-              <a href="mailto:inext.dev@proton.me" className="btn btn-outline-primary">Send a message</a>
-            </div>
-            <div className="contact__option">
-              <RiMessengerLine className="contact__option-icon" />
-              <h4>Messenger</h4>
-              <h5>Dummy Hungry</h5>
-              <a href="https://m.me" className="btn btn-outline-primary">Send a message</a>
-            </div>
-            <div className="contact__option">
-              <RiWhatsappLine className="contact__option-icon" />
-              <h4>Whatsapp</h4>
-              <h5>+212 704866309</h5>
-              <a href="https://api.whatsapp.com/send?phone=212704866309" className="btn btn-outline-primary">
-                Send a message
-              </a>
-            </div>
+      alert(
+        `Hello ${fullName}!!!\nYour form submitted successFully.\nOur Team will contact you soon...\nHave a Great Day.`
+      );
+      setFullName("");
+      setMobile();
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.error("Error submitting form data:", error);
+    }
+  };
+
+  return (
+    <section id="contact">
+      <h5>Get In Touch</h5>
+      <h2>Contact Me</h2>
+      <div className="container contact__container">
+        <div className="contact__options">
+          <div className="contact__option">
+            <RiPhoneLine className="contact__option-icon" />
+            {/* <h4>Mobile</h4> */}
+            <h5>Why not ring me up for a chat?</h5>
+            <a href="tel:+916383294804" className="btn btn-outline-primary">
+              Call Now
+            </a>
           </div>
-          <form ref={this.form} onSubmit={this.sendEmail} action="">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Full Name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <textarea
-              name="message"
-              rows="7"
-              placeholder="Your Message"
-              required
-            ></textarea>
-            <button type="submit" className="btn btn-primary p-3 fs-5">
-              Send Message
-            </button>
-          </form>
+          <div className="contact__option">
+            <MdOutlineEmail className="contact__option-icon" />
+            {/* <h4>Email</h4> */}
+            <h5>Drop an email, and let's make some digital magic.</h5>
+            <a
+              href="mailto:bharaniarasu.business@gmail.com"
+              className="btn btn-outline-primary"
+            >
+              Send a message
+            </a>
+          </div>
+
+          <div className="contact__option">
+            <RiWhatsappLine className="contact__option-icon" />
+            {/* <h4>Whatsapp</h4> */}
+            <h5>Shoot me a message</h5>
+            <a
+              href="https://api.whatsapp.com/send?phone=6383294804"
+              className="btn btn-outline-primary"
+            >
+              Send a message
+            </a>
+          </div>
         </div>
-      </section>
-    );
-  }
-}
+        <form onSubmit={userDataHandler} action="">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Full Name"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={eMail}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="number"
+            name="mobile"
+            placeholder="Your Mobile Number"
+            value={mobile}
+            onChange={(e) => setMobile(e.target.value)}
+            required
+          />
+          <textarea
+            name="message"
+            rows="7"
+            placeholder="Your Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          ></textarea>
+          <button type="submit" className="btn btn-primary p-3 fs-5">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  );
+};
 
 export default Contact;

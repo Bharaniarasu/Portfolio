@@ -7,8 +7,9 @@ header {
   text-align: center;
   height: 100%;
   position: relative;
-  h1{
-    color:var(--color-yellow)
+  h5,
+  .role {
+    color: var(--color-light);
   }
 }
 /* ================= CTA ===================== */
@@ -17,14 +18,14 @@ header {
   display: flex;
   gap: 1.2rem;
   justify-content: center;
-//   .btn-download{
-// border: 1px solid var(--color-yellow);
-// color:var(--color-yellow)
-//   }
-//   .btn-contact{
-//     background:var(--color-purple);
-//     color:var(--color-light)
-//   }
+  //   .btn-download{
+  // border: 1px solid var(--color-yellow);
+  // color:var(--color-yellow)
+  //   }
+  //   .btn-contact{
+  //     background:var(--color-purple);
+  //     color:var(--color-light)
+  //   }
 }
 /* ================= HEADER SOCIALS ========== */
 .header__socials {
