@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.6be7ba7f.css",
-    "main.js": "/Portfolio/static/js/main.be07a5ad.js",
+    "main.js": "/Portfolio/static/js/main.4f0e6fdd.js",
     "static/media/me.png": "/Portfolio/static/media/me.821ecddcb9953b46bf75.png",
     "static/media/me-about.jpg": "/Portfolio/static/media/me-about.fb4452e7f286d3636ef9.jpg",
     "static/media/Project_1.jpg": "/Portfolio/static/media/Project_1.4a86140b33eced400133.jpg",
@@ -11,10 +11,10 @@
     "static/media/Barani_Arasu.pdf": "/Portfolio/static/media/Barani_Arasu.dec0e63fc3db30c6e505.pdf",
     "index.html": "/Portfolio/index.html",
     "main.6be7ba7f.css.map": "/Portfolio/static/css/main.6be7ba7f.css.map",
-    "main.be07a5ad.js.map": "/Portfolio/static/js/main.be07a5ad.js.map"
+    "main.4f0e6fdd.js.map": "/Portfolio/static/js/main.4f0e6fdd.js.map"
   },
   "entrypoints": [
     "static/css/main.6be7ba7f.css",
-    "static/js/main.be07a5ad.js"
+    "static/js/main.4f0e6fdd.js"
   ]
 }
