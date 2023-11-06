@@ -67,7 +67,7 @@ const Contact = () => {
               href="mailto:bharaniarasu.business@gmail.com"
               className="btn btn-outline-primary"
             >
-              Send a message
+              Send mail
             </a>
           </div>
 
@@ -79,7 +79,7 @@ const Contact = () => {
               href="https://api.whatsapp.com/send?phone=6383294804"
               className="btn btn-outline-primary"
             >
-              Send a message
+              Send message
             </a>
           </div>
         </div>
