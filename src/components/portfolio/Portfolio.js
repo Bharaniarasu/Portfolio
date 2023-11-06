@@ -11,9 +11,9 @@ const data = [
     image: TNCart_Img,
     title: "E-Commerce application using MERN Stack",
     github: "https://github.com/Bharaniarasu/E-Comm-MERN-",
-    demo: "/",
+    demo: "https://tncart-view-e9jn.onrender.com/",
     showSource: false,
-    showDemo: true,
+    showDemo: false,
   },
   {
     id: 2,
@@ -44,54 +44,47 @@ const data = [
   },
 ];
 
-class Portfolio extends Component {
-  render() {
-    return (
-      <section id="portfolio">
-        <h5>My Recent Work</h5>
-        <h2>Portfolio</h2>
-        <div className="container portfolio__container">
-          {data.map(
-            ({ id, image, title, github, demo, showDemo, showSource }) => {
-              return (
-                <article key={id} className="portfolio__item">
-                  <div className="portfolio__item-image">
-                    <img src={image} alt="" />
-                  </div>
-                  <h4 className="">{title}</h4>
-                  <div className="portfolio__item-cta">
-                    <button
-                      className="btn btn-outline-primary button_git"
-                      disabled={showSource}
-                    >
-                      <a
-                        href={github}
-                        target="_blank"
-                        className=""
-                      >
-                        {" "}
-                        Github
-                      </a>
-                    </button>
-                    <button className="btn btn-primary button_demo" disabled={showDemo}>
-                      <a
-                        href={demo}
-                        target="_blank"
-                        className=""
-                      >
-                        {" "}
-                        Live Demo{" "}
-                      </a>
-                    </button>
-                  </div>
-                </article>
-              );
-            }
-          )}
-        </div>
-      </section>
-    );
-  }
-}
+const Portfolio = () => {
+  return (
+    <section id="portfolio">
+      <h5>My Recent Work</h5>
+      <h2>Portfolio</h2>
+      <div className="container portfolio__container">
+        {data.map(
+          ({ id, image, title, github, demo, showDemo, showSource }) => {
+            return (
+              <article key={id} className="portfolio__item">
+                <div className="portfolio__item-image">
+                  <img src={image} alt="" />
+                </div>
+                <h4 className="">{title}</h4>
+                <div className="portfolio__item-cta">
+                  <button
+                    className="btn btn-outline-primary button_git"
+                    disabled={showSource}
+                  >
+                    <a href={github} target="_blank" className="">
+                      {" "}
+                      Github
+                    </a>
+                  </button>
+                  <button
+                    className="btn btn-primary button_demo"
+                    disabled={showDemo}
+                  >
+                    <a href={demo} target="_blank" className="">
+                      {" "}
+                      Live Demo{" "}
+                    </a>
+                  </button>
+                </div>
+              </article>
+            );
+          }
+        )}
+      </div>
+    </section>
+  );
+};
 
 export default Portfolio;

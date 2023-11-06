@@ -15,7 +15,8 @@
     "react-scripts": "5.0.1",
     "sass": "^1.69.0",
     "swiper": "8.0.7",
-    "swiper.js": "1.0.0"
+    "swiper.js": "1.0.0",
+    "util": "^0.12.5"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
