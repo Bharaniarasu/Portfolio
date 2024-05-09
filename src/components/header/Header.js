@@ -7,14 +7,21 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <h5 className="">Hello I'm</h5>
-        <h1 className="text-uppercase text-primary">Bharani Arasu</h1>
-        <div className="role">Fullstack Developer</div>
-        <CTA />
-        <div className="me">
-          <img src={ME} alt="Bharani" />
+        <h5 className="fs-3 ">
+          Hello <span className="text-warning">I'm</span>
+        </h5>
+        <h1 className="text-uppercase text-white">Bharani </h1>
+        <div className="role fs-3">
+          A Passionate <span className="text-warning">Fullstack Developer</span>
         </div>
-        <a href="#contact" className="scroll__down text-decoration-none">
+        <CTA />
+        {/* <div className="me">
+          <img src={ME} alt="Bharani" />
+        </div> */}
+        <a
+          href="#contact"
+          className="scroll__down text-decoration-none text-warning"
+        >
           Scroll Down
         </a>
         <HeaderSocials />

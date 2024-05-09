@@ -2,14 +2,22 @@ header {
   height: 100vh;
   padding-top: 7rem;
   overflow: hidden;
+  background: url("../../assets//images//BT.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
 }
 .header__container {
-  text-align: center;
+  // text-align: center;
   height: 100%;
   position: relative;
+
   h5,
   .role {
     color: var(--color-light);
+  }
+  h1 {
+    font-size: 4rem;
   }
 }
 /* ================= CTA ===================== */
@@ -17,7 +25,7 @@ header {
   margin-top: 2.5rem;
   display: flex;
   gap: 1.2rem;
-  justify-content: center;
+  // justify-content: center;
   //   .btn-download{
   // border: 1px solid var(--color-yellow);
   // color:var(--color-yellow)
@@ -37,16 +45,19 @@ header {
   bottom: 3rem;
   left: 0;
   /* transform: translateY(-50%); */
+  & :hover {
+    color: var(--bs-warning);
+  }
 }
 .header__socials::after {
   content: "";
   width: 1px;
   height: 2rem;
-  background: var(--bs-primary);
+  background: var(--bs-white);
 }
 /* ================= ME ================== */
 .me {
-  background: linear-gradient(var(--color-primary), transparent);
+  background: linear-gradient(var(--color-warning), transparent);
   width: 22rem;
   height: 30rem;
   position: absolute;
@@ -59,9 +70,9 @@ header {
 /* ================= SCROLL DOWN ======= */
 .scroll__down {
   position: absolute;
-  right: -2.3rem;
-  bottom: 5rem;
-  transform: rotateZ(90deg);
+  right: 45%;
+  bottom: 1rem;
+  // transform: rotateZ(90deg);
   font-weight: 200;
   font-size: 0.9rem;
 }
@@ -72,13 +83,26 @@ header {
   header {
     height: 68vh;
   }
+  .header__socials {
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+  }
 }
 /* ================ MEDIA QUERIES (SMALL DEVICES) ============= */
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    // height: 100vh;
   }
-  .header__socials,
+  .header__socials {
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+  }
   .scroll__down {
     display: none;
   }

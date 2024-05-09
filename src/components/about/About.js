@@ -1,5 +1,5 @@
 import { Component } from "react";
-import ME from "../../assets/images/me-about.jpg";
+import cartoon_img from "../../assets/images/dev-cartoon.png";
 import { BsAwardFill } from "react-icons/bs";
 import { FiUsers } from "react-icons/fi";
 import { FaProjectDiagram } from "react-icons/fa";
@@ -8,11 +8,13 @@ const About = () => {
   return (
     <section id="about">
       <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <h2>
+        About<span className="text-warning"> Me</span>
+      </h2>
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="me" />
+            {/* <img src={cartoon_img} alt="me" /> */}
           </div>
         </div>
         <div className="about__content">

@@ -1,25 +1,19 @@
+#about {
+  background: url("../../assets//images/Untitled\ design.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
 }
-.about__me {
-  width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 2rem;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    var(--color-primary),
-    transparent
-  );
-  display: grid;
-  place-items: center;
-}
 .about__me-image {
   border-radius: 2rem;
   overflow: hidden;
-  transform: rotate(10deg);
+  // transform: rotate(10deg);
   transition: var(--transition);
 }
 .about__me-image:hover {
@@ -31,27 +25,27 @@
   gap: 1.5rem;
 }
 .about__card {
-  background: linear-gradient(160deg,var(--color-primary), transparent);
+  background: linear-gradient(160deg, var(--bs-black), transparent);
   color: var(--bs-light);
-  border: 2px solid var(--color-border);
+  // border: 2px solid var(--color-border);
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
 }
 .about__card:hover {
-  border: 2px solid var(--color-primary);
-  background: transparent;
+  // border: 2px solid var(--bs-warning);
+  // background: transparent;
   cursor: default;
-  color:var(--bs-primary);
+  color: var(--bs-warning);
 
-  .about__icon{
-    color:var(--bs-primary);
+  .about__icon {
+    color: var(--bs-warning);
   }
 }
 
 .about__icon {
-  color:var(--bs-light);
+  color: var(--bs-light);
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
@@ -63,7 +57,7 @@
 }
 .about__content p {
   margin: 2rem 0 2.6rem;
-  color: var(--color-light);
+  color: var(--color-white);
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ============= */
