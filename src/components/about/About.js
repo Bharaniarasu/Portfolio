@@ -36,7 +36,7 @@ const About = () => {
             </article>
           </div>
           <p className="text-justify">
-            Experienced MERN Stack Developer with 2 years of experience in
+            Experienced MERN Stack Developer with 2.8 years of experience in
             crafting innovative web solutions. Actively pursuing a role to apply
             my expertise in designing, developing, and maintaining web
             applications. Dedicated to delivering high-quality code and
