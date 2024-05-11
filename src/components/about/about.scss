@@ -1,9 +1,10 @@
 #about {
-  background: url("../../assets//images/Untitled\ design.png");
+  background: url("../../assets/images//bg-black.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding: 1.3rem;
 }
 .about__container {
   display: grid;
@@ -11,7 +12,7 @@
   gap: 15%;
 }
 .about__me-image {
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   overflow: hidden;
   // transform: rotate(10deg);
   transition: var(--transition);

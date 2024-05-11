@@ -14,7 +14,7 @@ footer a {
   margin-bottom: 2rem;
   display: block;
 }
- 
+
 .footer__social {
   display: flex;
   justify-content: end;
@@ -32,15 +32,14 @@ footer a {
 }
 .footer__social a:hover {
   background: transparent;
-  color: var(--color-primary);
-  border-color: var(--color-bg);
+  color: var(--bs-warning);
+  border-color: var(--bs-warning);
 }
 .footer__copyright {
   color: var(--color-white);
 }
 /* ================ MEDIA QUERIES (SMALL DEVICES) ============= */
 @media screen and (max-width: 600px) {
- 
   .footer__social {
     margin-bottom: 2.6rem;
   }

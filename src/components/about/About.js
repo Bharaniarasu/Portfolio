@@ -43,7 +43,7 @@ const About = () => {
             exceptional user experiences to support the success of
             forward-thinking enterprises.
           </p>
-          <a href="#contact" className="btn btn-outline-primary">
+          <a href="#contact" className="btn btn-outline-warning">
             Let's Talk
           </a>
         </div>

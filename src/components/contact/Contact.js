@@ -55,7 +55,7 @@ const Contact = () => {
             <RiPhoneLine className="contact__option-icon" />
             {/* <h4>Mobile</h4> */}
             <h5>Why not ring me up for a chat?</h5>
-            <a href="tel:+916383294804" className="btn btn-outline-primary">
+            <a href="tel:+916383294804" className="btn btn-outline-warning">
               Call Now
             </a>
           </div>
@@ -65,7 +65,7 @@ const Contact = () => {
             <h5>Drop an email, and let's make some digital magic.</h5>
             <a
               href="mailto:bharaniarasu.business@gmail.com"
-              className="btn btn-outline-primary"
+              className="btn btn-outline-warning"
             >
               Send mail
             </a>
@@ -77,7 +77,7 @@ const Contact = () => {
             <h5>Shoot me a message</h5>
             <a
               href="https://api.whatsapp.com/send?phone=6383294804"
-              className="btn btn-outline-primary"
+              className="btn btn-outline-warning"
             >
               Send message
             </a>
@@ -116,7 +116,10 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary p-3 fs-5">
+          <button
+            type="submit"
+            className="btn btn-outline-warning p-3 px-4 fs-5 mt-4"
+          >
             Send Message
           </button>
         </form>

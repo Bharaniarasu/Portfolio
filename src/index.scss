@@ -13,11 +13,7 @@
   --bs-body-bg: #131316 !important;
 
   --color-bg-variant: #2c2c6c;
-  --color-bg-gradient: linear-gradient(
-    160deg,
-    var(--color-primary),
-    transparent
-  );
+  --color-bg-gradient: linear-gradient(160deg, var(--bs-warning), transparent);
   --color-border: #131316;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);

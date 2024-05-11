@@ -4,27 +4,27 @@
   gap: 2rem;
 }
 .experience__container > div {
-  background: linear-gradient(160deg, var(--color-primary), transparent);
+  background: linear-gradient(160deg, var(--color-black), transparent);
   padding: 2.4rem 5rem;
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   border: 2px solid var(--color-border);
   transition: var(--transition);
+  h3 {
+    color: var(--color-white);
+  }
+  h4 {
+    color: var(--bs-warning);
+  }
 }
 .experience__container > div:hover {
   background: transparent;
-  border:2px solid var(--color-primary);
+  border: 2px solid var(--bs-secondary);
   cursor: default;
-  h3 {
-    color: var(--color-primary);
-  }
-  h4 {
-    color: var(--color-primary);
-  }
 }
 .experience__container > div h3 {
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--color-dark);
+  color: var(--color-white);
 }
 .experience__content {
   display: grid;
@@ -40,7 +40,7 @@
 }
 .experience__details-icon {
   margin-top: 6px;
-  color: var(--color-primary);
+  color: var(--bs-warning);
 }
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ============= */
 

@@ -1,3 +1,5 @@
+#contact {
+}
 .contact__container {
   width: 58%;
   display: grid;
@@ -11,17 +13,17 @@
   color: var(--color-white);
 }
 .contact__option {
-  background: var(--color-bg-gradient);
+  background: black;
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
-  border: 2px solid var(--color-border);
+  border: 1px solid var(--bs-secondary);
   transition: var(--transition);
 }
 .contact__option:hover {
   background: transparent;
-  border: 2px solid var(--color-primary);
-  color: var(--color-primary);
+  border: 1px solid var(--bs-warning);
+  color: var(--bs-warning);
 }
 .contact__option-icon {
   font-size: 1.5rem;
@@ -44,11 +46,11 @@ input,
 textarea {
   width: 100%;
   padding: 1.5rem;
-  border-radius: 0.5rem;
+  // border-radius: 0.5rem;
   background: transparent;
-  border: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--bs-warning);
   resize: none;
-  color: var(--color-primary);
+  color: var(--bs-warning);
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ============= */

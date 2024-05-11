@@ -1,5 +1,5 @@
 import { Component } from "react";
-import CV from "../../assets/files/Barani_Arasu.pdf";
+import CV from "../../assets/files/Barani_T.pdf";
 const CTA = () => {
   return (
     <div className="cta">

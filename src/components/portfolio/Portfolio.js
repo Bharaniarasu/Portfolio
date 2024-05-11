@@ -4,6 +4,7 @@ import TNCart_Img from "../../assets/images/TN_Cart.png";
 import Project_jsaGroups_Img from "../../assets/images/Project_1.jpg";
 import Project_siddha_Img from "../../assets/images/Project_2.jpg";
 import Project_agri_Img from "../../assets/images/Project_3.jpg";
+import three_module from "../../assets/images/3d_module.png";
 
 const data = [
   {
@@ -42,6 +43,15 @@ const data = [
     showSource: true,
     showDemo: false,
   },
+  {
+    id: 5,
+    image: three_module,
+    title: "Three Js dynamic 3d Module",
+    github: "/",
+    demo: "https://3droomconfigurator.vsecommerce.com/",
+    showSource: true,
+    showDemo: false,
+  },
 ];
 
 const Portfolio = () => {
@@ -60,16 +70,16 @@ const Portfolio = () => {
                 <h4 className="">{title}</h4>
                 <div className="portfolio__item-cta">
                   <button
-                    className="btn btn-outline-primary button_git"
+                    className="btn btn-outline-warning button_git"
                     disabled={showSource}
                   >
-                    <a href={github} target="_blank" className="">
+                    <a href={github} target="_blank" className=" text-warning ">
                       {" "}
                       Github
                     </a>
                   </button>
                   <button
-                    className="btn btn-primary button_demo"
+                    className="btn btn-warning button_demo"
                     disabled={showDemo}
                   >
                     <a href={demo} target="_blank" className="">

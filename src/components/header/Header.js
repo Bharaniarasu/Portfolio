@@ -3,6 +3,7 @@ import CTA from "./CTA";
 import ME from "../../assets/images/me.png";
 import HeaderSocials from "./HeaderSocials";
 import "./header.scss";
+import { ReactTyped } from "react-typed";
 const Header = () => {
   return (
     <header>

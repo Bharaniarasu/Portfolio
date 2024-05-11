@@ -94,7 +94,7 @@ header {
 /* ================ MEDIA QUERIES (SMALL DEVICES) ============= */
 @media screen and (max-width: 600px) {
   header {
-    // height: 100vh;
+    height: 50vh;
   }
   .header__socials {
     flex-direction: row;

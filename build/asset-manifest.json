@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6be7ba7f.css",
-    "main.js": "/Portfolio/static/js/main.4f0e6fdd.js",
+    "main.css": "/Portfolio/static/css/main.9aa168b7.css",
+    "main.js": "/Portfolio/static/js/main.327f980c.js",
+    "static/media/BT.png": "/Portfolio/static/media/BT.05d842bcba266f10fef3.png",
+    "static/media/bg-black.png": "/Portfolio/static/media/bg-black.1b3dd104ef0d0beaf707.png",
     "static/media/me.png": "/Portfolio/static/media/me.821ecddcb9953b46bf75.png",
-    "static/media/me-about.jpg": "/Portfolio/static/media/me-about.fb4452e7f286d3636ef9.jpg",
     "static/media/Project_1.jpg": "/Portfolio/static/media/Project_1.4a86140b33eced400133.jpg",
     "static/media/Project_3.jpg": "/Portfolio/static/media/Project_3.727a781c367c468fb26e.jpg",
+    "static/media/dev-cartoon.png": "/Portfolio/static/media/dev-cartoon.4b43a3b697285d9aefcb.png",
     "static/media/Project_2.jpg": "/Portfolio/static/media/Project_2.e2b248dd45b4c9dea9e7.jpg",
     "static/media/TN_Cart.png": "/Portfolio/static/media/TN_Cart.b3d3bdd8de3bd3a58b88.png",
-    "static/media/Barani_Arasu.pdf": "/Portfolio/static/media/Barani_Arasu.dec0e63fc3db30c6e505.pdf",
+    "static/media/3d_module.png": "/Portfolio/static/media/3d_module.39c75bb2d1ebebb07cc9.png",
+    "static/media/Barani_T.pdf": "/Portfolio/static/media/Barani_T.010ac689e58da3b1e7d3.pdf",
     "index.html": "/Portfolio/index.html",
-    "main.6be7ba7f.css.map": "/Portfolio/static/css/main.6be7ba7f.css.map",
-    "main.4f0e6fdd.js.map": "/Portfolio/static/js/main.4f0e6fdd.js.map"
+    "main.9aa168b7.css.map": "/Portfolio/static/css/main.9aa168b7.css.map",
+    "main.327f980c.js.map": "/Portfolio/static/js/main.327f980c.js.map"
   },
   "entrypoints": [
-    "static/css/main.6be7ba7f.css",
-    "static/js/main.4f0e6fdd.js"
+    "static/css/main.9aa168b7.css",
+    "static/js/main.327f980c.js"
   ]
 }

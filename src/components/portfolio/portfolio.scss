@@ -5,27 +5,26 @@
 }
 
 .portfolio__item {
-  background: var(--color-bg-gradient);
-  padding: 1.2rem;
-  border-radius: 2rem;
-  border: 2px solid var(--color-border);
+  background: #000;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--bs-secondary);
   transition: var(--transition);
 }
 .portfolio__item:hover {
   background: transparent;
-  border: 2px solid var(--color-primary);
-  h4{
-    color: var(--color-primary);
-
+  border: 1px solid var(--bs-warning);
+  h4 {
+    color: var(--bs-warning);
   }
 }
 .portfolio__item-image {
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 .portfolio__item h4 {
   margin: 1.2rem 0 2rem;
-  color: var(--color-light);
+  color: #fff;
 }
 
 .portfolio__item-cta {
@@ -38,16 +37,17 @@
 }
 .button_git:hover {
   > a {
-    color: var(--color-white);
+    color: var(--color-black) !important;
   }
 }
 .button_demo > a {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-black);
 }
 .button_demo:hover {
+  background-color: #000 !important;
   > a {
-    color: var(--color-white);
+    color: var(--bs-warning) !important;
   }
 }
 
